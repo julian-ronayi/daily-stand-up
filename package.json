@@ -1,0 +1,15 @@
+{
+  "name": "daily-stand-up",
+  "version": "1.0.0",
+  "description": "Application to help developers to give summary on daily scrum meeting",
+  "main": "index.js",
+  "author": "Julian Ronayi <yuliy.ronayi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "trello": "^0.8.0"
+  }
+}
