@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Julian Ronayi <yuliy.ronayi@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "8.2.1"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
