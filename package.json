@@ -6,11 +6,15 @@
   "author": "Julian Ronayi <yuliy.ronayi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "dotenv": "^5.0.1",
     "say": "^0.14.0",
     "trello": "^0.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
   }
 }
