@@ -18,6 +18,10 @@ object-assign@~4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
+one-time@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/one-time/-/one-time-0.0.4.tgz#f8cdf77884826fe4dff93e3a9cc37b1e4480742e"
+
 qs@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-1.2.0.tgz#ed079be28682147e6fd9a34cc2b0c1e0ec6453ee"
@@ -34,6 +38,12 @@ restler@~3.3.0:
 sax@0.5.x:
   version "0.5.8"
   resolved "https://registry.yarnpkg.com/sax/-/sax-0.5.8.tgz#d472db228eb331c2506b0e8c15524adb939d12c1"
+
+say@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/say/-/say-0.14.0.tgz#742e707597d7359022e72851074f8598abcfd5c8"
+  dependencies:
+    one-time "0.0.4"
 
 trello@^0.8.0:
   version "0.8.0"
