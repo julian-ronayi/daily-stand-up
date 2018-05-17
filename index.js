@@ -74,8 +74,17 @@
 //       })
 //   });
 const http = require('http');
+const fs = require('fs');
+
 const returnHTMLtempate = require('./public/index');
 
 http.createServer(function (req, res) {
-  res.end(returnHTMLtempate('Some content'))
+  fs.readFile('./data.json', function (err, data) {
+    if (err) throw err;
+
+    const parsedData = JSON.parse(data);
+    const template = returnHTMLtempate(parsedData.content);
+
+    res.end(template);
+  })
 }).listen(3000, () => console.log('Listening port 3000'));

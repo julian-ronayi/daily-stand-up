@@ -512,3 +512,4 @@ build/
 sitemap/robots.txt
 
 package-lock.json
+data.json
