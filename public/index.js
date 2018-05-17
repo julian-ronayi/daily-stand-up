@@ -41,6 +41,7 @@ const returnHTMLtempate = (content) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>What Julian did yesterday</title>
+        <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
       </head>
       ${STYLES}
       <body>
@@ -57,6 +58,11 @@ const returnHTMLtempate = (content) => {
             </p>
           </div>
         </div>
+        <script type="text/javascript">
+          window.onload = function () {
+            responsiveVoice.speak("${content.replace(/<\/?br\/?>|\"/g, '')}", "UK English Male", {pitch: 0.9, rate: 0.9});
+          }
+        </script>
       </body>
       </html>
     `
