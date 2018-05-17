@@ -57,7 +57,7 @@ const returnHTMLtempate = (content) => {
             </p>
           </div>
         </div>
-        <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
         <script type="text/javascript">
           window.onload = function () {
             responsiveVoice.speak("${content.replace(/<\/?br\/?>|\"/g, '')}", "UK English Male", {pitch: 0.9, rate: 0.9});
